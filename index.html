@@ -780,36 +780,6 @@
   <footer>
     created by <a href="https://github.com/angkasa27" target="_blank" rel="noreferrer">angkasa27</a>
   </footer>
-
-  <script>
-    window.onload = function () {
-
-      var parallaxBox = document.getElementById('mouse');
-      var koiLeft = document.getElementById('koi').offsetLeft,
-        koiTop = document.getElementById('koi').offsetTop,
-        leaf1Left = document.getElementById('leaf1').offsetLeft,
-        leaf1Top = document.getElementById('leaf1').offsetTop;
-
-      parallaxBox.onmousemove = function (event) {
-        event = event || window.event;
-        var x = event.clientX - parallaxBox.offsetLeft,
-          y = event.clientY - parallaxBox.offsetTop;
-
-        // mouseParallax('koi', koiLeft, koiTop, x, y, 20);
-        // mouseParallax('leaf1', leaf1Left, leaf1Top, x, y, 40);
-      }
-
-    }
-
-    function mouseParallax(id, left, top, mouseX, mouseY, speed) {
-      var obj = document.getElementById(id);
-      var parentObj = obj.parentNode,
-        containerWidth = parseInt(parentObj.offsetWidth),
-        containerHeight = parseInt(parentObj.offsetHeight);
-      obj.style.left = left - (((mouseX - (parseInt(obj.offsetWidth) / 2 + left)) / containerWidth) * speed) + 'px';
-      obj.style.top = top - (((mouseY - (parseInt(obj.offsetHeight) / 2 + top)) / containerHeight) * speed) + 'px';
-    }
-  </script>
 </body>
 
 </html>
