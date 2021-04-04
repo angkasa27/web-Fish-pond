@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#wrap {
+  height: 100%;
+  font-family: 'Nunito',
+  sans-serif;
+  color: rgba(109, 54, 238, 0.1);
+}
+
+body>#wrap {
+  height: auto;
+  min-height: 100%;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  /* -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; */
+}
+
+body{
+  background-color: #e6fde7;
+}
+
+main#box{
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 30rem;
+  background-color: #8590F6;
+  /* overflow: hidden; */
+  z-index: 0;
+  border-radius: 100%;
+}
+
+.layer{
+  position: absolute;
+  display:block;
+}
+
+
+.koi{
+  width: 20rem;
+  top: 5rem;
+  left: 5rem;
+  z-index: 10;
+  /* transition: transform .5s ease-out;
+  transform: rotate(-10deg); */
+  animation: koi 10s linear infinite;
+}
+
+@keyframes koi{
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .koi:hover{
+  transform: rotate(100deg);
+} */
+
+@keyframes leaf {
+  0% {
+    transform: translate(0,0);
+  }
+
+  50% {
+    transform: translate(0.5rem, -.5rem);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.leaf1 {
+  width: 15rem;
+  top: 7rem;
+  left: 12rem;
+  z-index: 30;
+  animation: leaf 5s ease-in-out infinite;
+}
+
+.leaf2 {
+  width: 10rem;
+  top: 13rem;
+  left: -3rem;
+  z-index: 30;
+  animation: leaf 10s ease-in-out infinite;
+}
+
+.blob1{
+  width: 13rem;
+  top: 11rem;
+  left: -5rem;
+  z-index: 20;
+}
+
+.blob2 {
+  width: 10rem;
+  top: 20rem;
+  left: 20rem;
+  z-index: 20;
+}
+
+.blob3 {
+  width: 13rem;
+  top: -2rem;
+  left: 18rem;
+  z-index: 20;
+}
+
+@keyframes sakura {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) scale(2);
+  }
+
+  20% {
+    opacity: 1;
+    transform: rotate(720deg) scale(1);
+  }
+
+  60% {
+    opacity: 1;
+    transform: rotate(720deg) scale(1);
+  }
+
+  85% {
+    opacity: 0;
+    transform: rotate(720deg) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(720deg) scale(1);
+  }
+}
+
+.sakura1 {
+  width: 3rem;
+  top: 24.5rem;
+  left: 20.8rem;
+  z-index: 30;
+  animation: sakura 20s linear infinite;
+}
+.sakura2 {
+  width: 3rem;
+  top: 3rem;
+  left: 19rem;
+  z-index: 30;
+  animation: sakura 15s linear 10s infinite;
+}
+
+.sakura3 {
+  width: 3rem;
+  top: 18rem;
+  left: 10rem;
+  z-index: 30;
+  animation: sakura 20s linear 5s infinite;
+}
+
+.sakura4{
+  width: 3rem;
+  top: 3rem;
+  left: 5rem;
+  z-index: 30;
+  animation: sakura 10s linear 7s infinite;
+}
+
+/* OTHER */
+
+footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: .5rem 0;
+  color: #6e6e6e;
+}
+
+footer > a{
+  text-decoration: none;
+  color: #6e6e6e;
+
+}
+
+footer > a:hover{
+  color: #333333;
+}
